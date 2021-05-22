@@ -1,0 +1,172 @@
+@import url(./global.css);
+
+/* swiper */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: #fff; */
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.swiper-button-prev:after,
+.swiper-container-rtl .swiper-button-next:after,
+.swiper-button-next:after,
+.swiper-container-rtl .swiper-button-prev:after {
+  color: #333;
+}
+
+/* end swiper */
+
+section {
+  padding: 6rem 0;
+}
+
+.banner {
+  background-image: url(../img/background-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+}
+
+.banner::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .7);
+}
+
+.banner .container {
+  position: relative;
+  z-index: 1;
+}
+
+.banner .banner-text h2 {
+  font-size: 4em;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1em;
+}
+
+.banner .banner-text a {
+  font-weight: 500;
+  padding: .75rem 1.75rem;
+}
+
+.project img {
+  max-width: 250px;
+  transition: .3s;
+}
+
+.project img:hover {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+  transform: translateY(-0.6rem);
+}
+
+.client img {
+  max-width: 100px;
+  filter: grayscale(.4);
+  cursor: pointer;
+  margin: 1rem;
+  transition: .3s;
+}
+
+.client img:hover {
+  filter: grayscale(0);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, .2);
+}
+
+.testimonials .testi-box {
+  margin-top: 6.5rem;
+}
+
+.testimonials .swiper2 .testi-box img {
+  width: 128px;
+  height: 128px;
+  margin-top: -64px;
+}
+
+.cto {
+  background-image: url(../img/background-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.cto::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .7);
+}
+
+.cto .container {
+  position: relative;
+  z-index: 1;
+}
+
+.cto .my-btn {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 300px;
+}
+
+footer {
+  background-color: #333;
+  padding: 6rem 0;
+}
+
+footer .contact i {
+  margin-right: .6rem;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo .my-text {
+  text-decoration: none;
+  font-size: 4em;
+  margin-right: 1rem;
+}
+
+.footer-logo .logo-text span {
+  display: block;
+  color: #f8f9fa;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  line-height: 1em;
+}
